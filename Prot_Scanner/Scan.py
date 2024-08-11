@@ -6,7 +6,7 @@ ipadress = input("[+] Enter Target IP to Scan : ")
 port = 80
 try:
     sock = socket.socket()
-    sock.connect((ipadress),port)
+    sock.connect((ipadress,port))
     print(f"[+] Port {port} is Open")
     
 except:
